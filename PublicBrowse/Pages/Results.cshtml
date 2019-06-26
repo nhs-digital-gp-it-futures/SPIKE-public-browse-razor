@@ -27,19 +27,23 @@
     
     <div class="panel-container">
         <div class="search-panel">
+            <form method="post">
             <h2>Refine your selection</h2>
-            <div class="scrollable-checkboxes"> 
-                <form method="post">
+                <div class="scrollable-checkboxes"> 
                     <ul>
                         <li class="listing-section-header">A-Z</li>
-                        @foreach (var capabilty in Model.Capabilities) {
+                        @for (var i = 0; i < Model.CapabilitySelectionOptions.Count; i++) {
                             <li class="capability-option">
-                                <label><input type="checkbox">@Html.DisplayFor(modelItem => capabilty.Title)</label>
+                                <label>@Html.CheckBoxFor(modelItem => Model.CapabilitySelectionOptions[i].IsSelected)@Html.DisplayFor(modelItem => Model.Capabilities[i].Title)</label>
+                                @Html.HiddenFor(m => Model.CapabilitySelectionOptions[i].ID)
                             </li>
                         }
                     </ul>
-                </form>
-            </div>
+                </div>
+                <section class="form-controls">
+                    <button type="submit">Apply Search</button>
+                </section>
+            </form>
         </div>
         <div class="results-panel">
             <h2 class="collapsible-label">Solutions</h2>
