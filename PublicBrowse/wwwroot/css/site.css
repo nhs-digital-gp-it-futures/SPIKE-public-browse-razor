@@ -1,0 +1,280 @@
+﻿@font-face {
+  font-family: "Frutiger W01";
+  src: url("https://assets.nhs.uk/fonts/FrutigerLTW01-45Light.eot?#iefix");
+  src: url("https://assets.nhs.uk/fonts/FrutigerLTW01-45Light.eot?#iefix") format("eot"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-45Light.woff2") format("woff2"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-45Light.woff") format("woff"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-45Light.ttf") format("truetype"), url("https://assets.nhs.uk/fonts/FrutigerLTW01-45Light.svg#29f3ff8a-1719-4e25-a757-53ee1a1114a5") format("svg");
+  font-style: normal;
+  font-weight: 100; 
+}
+
+html, body, div.container.main-content {
+  color: #222222;
+  font-family: 'Frutiger W01', Arial;
+  line-height: 1.33; 
+  margin:0;
+  padding:0;
+}
+header {
+  margin-bottom: none;
+}
+
+body div.container.main-content {
+  width: 66%;
+  background: #f0f4f5;
+  height: 100%;
+  margin: auto;
+}
+
+#layout-nav {
+  width: 100%;
+}
+
+#layout-nav .upper, #layout-nav .lower {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 3em;
+  
+}
+
+#layout-nav .upper li img {
+  height: 3rem;
+}
+
+#layout-nav ul {
+  list-style-type: none;
+  display: flex;
+  height: 100%;
+}
+
+#layout-nav ul li {
+  margin: 0 1em;
+}
+
+#layout-nav .upper {
+  background: #ffffff;
+  color: #222222;
+}
+
+#layout-nav .lower {
+  background: #005eb8;
+  color: #ffffff;
+}
+
+
+#capability-selector-page div.page-description {
+  max-width: 40em;
+  padding: 1em;
+  margin-bottom: 5em
+}
+
+#capability-selector-page .collapsible h2.collapsible-label {
+  overflow: hidden;
+  color: #005eb8;
+  text-align: center;
+}
+#capability-selector-page .collapsible h2.collapsible-label:before,
+#capability-selector-page .collapsible h2.collapsible-label:after {
+  background-color: #005eb8;
+  content: "";
+  display: inline-block;
+  height: 3px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+#capability-selector-page .collapsible h2.collapsible-label:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+#capability-selector-page .collapsible h2.collapsible-label:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+#capability-selector-page ul.capability-selector {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#capability-selector-page ul.capability-selector li {
+  padding: 2em;
+  margin: 1em;
+  background: #ffffff;
+  width: 15em;
+  height: 15em;
+  box-shadow: 0px 0px 20px 4px #d0d4d5;
+}
+
+#capability-selector-page ul.capability-selector li div.upper {
+  height: 3em;
+}
+
+#capability-selector-page ul.capability-selector li p.middle{
+  height: 7em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#capability-selector-page ul.capability-selector li div.upper h3 {
+  text-align: center;
+}
+
+#capability-selector-page ul.capability-selector li div.upper a {
+  text-decoration: none;
+  color: #005eb8;
+}
+
+#capability-selector-page ul.capability-selector li div.upper a:hover {
+  background: #ffb81c;
+}
+
+#capability-selector-page ul.capability-selector li div.lower {
+  height: 2em;
+  padding-top: 1em;
+  vertical-align: bottom;
+}
+
+#capability-selector-page form section.form-controls {
+  text-align: right;
+  padding: 1em;
+}
+
+#capability-selector-page form section.form-controls  button {
+  border: none;
+  border-bottom: 2px solid #013317;
+  background: #007f3b;
+  padding: 1em 2em;
+  color: #ffffff;
+}
+
+#capability-selector-page form section.form-controls button:hover {
+  background: #005f0b;
+}
+
+#solution-results-page {
+  margin: 0;
+  padding: 0;
+}
+
+#solution-results-page div.page-description {
+  padding: 1em;
+}
+
+#solution-results-page div.page-description ul.capability-selection-listing {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#solution-results-page div.page-description ul.capability-selection-listing li {
+  padding: 0.25em 0.5em;
+}
+
+#solution-results-page div.panel-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 1em;
+}
+
+#solution-results-page div.panel-container div.search-panel {
+  width: 30%;
+}
+
+#solution-results-page div.panel-container div.search-panel div.scrollable-checkboxes ul{
+  list-style-type: none;
+  padding: none;
+  margin: none;
+}
+
+#solution-results-page div.panel-container div.search-panel div.scrollable-checkboxes li.listing-section-header {
+  padding: 0.5em 0em;
+  border-bottom: 1px solid #d0d4d5;
+}
+
+#solution-results-page div.panel-container div.search-panel div.scrollable-checkboxes li label,
+#solution-results-page div.panel-container div.search-panel div.scrollable-checkboxes li {
+  width: 100%;
+  padding: 1em 0em;
+}
+
+#solution-results-page div.panel-container div.search-panel div.scrollable-checkboxes {
+  overflow-y: scroll;
+  background: #ffffff;
+  margin: none;
+  padding: none;
+  height: 15em;
+  border: 1px solid #005eb8
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #005eb8;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #003e98; 
+}
+
+#solution-results-page div.panel-container div.search-panel div.scrollable-checkboxes li label:hover {
+  background: #f0f4f5;
+}
+
+#solution-results-page div.panel-container div.results-panel {
+  width: 65%;
+  min-width: 40em;
+  padding: 0em 1em;
+}
+
+#solution-results-page div.panel-container div.results-panel ul {
+  list-style-type: none;
+}
+
+#solution-results-page div.panel-container div.results-panel ul li.solution-result {
+  border-top: 2px solid #d0d4d5;
+  margin-bottom: 2em;
+  min-height: 10em;
+}
+
+#solution-results-page div.panel-container div.results-panel ul li.solution-result h3 {
+  color: #005eb8;
+}
+
+#solution-results-page div.panel-container div.results-panel ul li.solution-result ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#solution-results-page div.panel-container div.results-panel ul li.solution-result ul li {
+  width: 50%;
+}
+
+#solution-results-page div.return-container {
+  width: 100%;
+  background: #ffffff;
+  color: #005eb8;
+  padding: 1em;
+}
+
+#solution-results-page div.return-container a:visited,
+#solution-results-page div.return-container a {
+  color: #005eb8;
+  text-decoration: none;
+}
+
+#solution-results-page div.return-container a:hover {
+ background: #ffb81c
+}

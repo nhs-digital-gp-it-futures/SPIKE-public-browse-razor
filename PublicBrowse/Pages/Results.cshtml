@@ -1,0 +1,71 @@
+﻿@page
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@model ResultsModel
+@{
+}
+<div id="solution-results-page">
+    <div class="return-container">
+        <a href="../">< Search again</a>
+    </div>
+    <div class="page-description">
+        <h1>Browse Results</h1>
+        @if(Model.SelectedCapabilities.Count != 0) {
+            <p><b>@Html.DisplayFor(modelItem => Model.Solutions.Count) Results</b> contain the capabilities:</p>
+            <ul class="capability-selection-listing">
+                @foreach (var capabilty in Model.SelectedCapabilities) {
+                    <li class="selected-capability">
+                        <i>@Html.DisplayFor(modelItem => capabilty.Title)</i>
+                    </li>
+                }
+            </ul>
+        }
+        @if(Model.SelectedCapabilities.Count == 0) {
+            <p><b>No Capabilities Selected</b>, showing all solutions.</p>
+        }
+    </div>
+    
+    <div class="panel-container">
+        <div class="search-panel">
+            <h2>Refine your selection</h2>
+            <div class="scrollable-checkboxes"> 
+                <form method="post">
+                    <ul>
+                        <li class="listing-section-header">A-Z</li>
+                        @foreach (var capabilty in Model.Capabilities) {
+                            <li class="capability-option">
+                                <label><input type="checkbox">@Html.DisplayFor(modelItem => capabilty.Title)</label>
+                            </li>
+                        }
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <div class="results-panel">
+            <h2 class="collapsible-label">Solutions</h2>
+            <ul class="solution-listing">
+                @foreach (var solution in Model.Solutions) {
+                    <li class="solution-result">
+                        <h3>
+                            @Html.DisplayFor(modelItem => solution.Name)
+                        </h3>
+                        <p class="middle">@Html.DisplayFor(modelItem => solution.Description)</p>
+                        <h4>Capabilities</h4>
+                        <ul class="capabilities-met">
+                            @foreach (var capabilityID in solution.CapabilityIDs) {
+                                <li>
+                                    @Html.DisplayFor(modelItem => Model.Capabilities[capabilityID].Title)
+                                </li>
+                            }
+                        </ul>
+                    </li>
+                }
+                @if (Model.Solutions.Count == 0) {
+                    <li>
+                        <h3>No solutions meet your specified requirements.</h3>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,87 @@
+[
+    {
+        "ID": 0,
+        "Title": "Appointments Management - GP",
+        "Summary": "Supports the administration, scheduling, resourcing and reporting of appointments.",
+        "URL": "buyingcatalogue.digital.nhs.uk/about",
+        "IsFoundation": true
+    },
+    {
+        "ID": 1,
+        "Title": "Patient Information Maintenance",
+        "Summary": "Supports the registration of Patients and the maintenance of all Patient personal information. Supports the organisation and presentation of a comprehensive Patient Record. Also supports the management of related persons and configuring access to Citizen Services.",
+        "URL": "buyingcatalogue.digital.nhs.uk/about",
+        "IsFoundation": true
+    },
+    {
+        "ID": 2,
+        "Title": "Prescribing",
+        "Summary": "Supports the effective and safe prescribing of medical products and appliances to Patients. Information to support prescribing will be available.",
+        "URL": "buyingcatalogue.digital.nhs.uk/about",
+        "IsFoundation": true
+    },
+    {
+        "ID": 3,
+        "Title": "Recording Consultations",
+        "Summary": "Supports the standardised recording of Consultations and other General Practice activities. Also supports the extraction of Female Genital Mutilation (FGM) data for the FGM data set.",
+        "URL": "buyingcatalogue.digital.nhs.uk/about",
+        "IsFoundation": true
+    },
+    {
+        "ID": 4,
+        "Title": "Appointments Management - Citizen",
+        "Summary": "Enables Citizens to manage their Appointments online. Supports the use of Appointment slots that have been configured in Appointments Management - GP.",
+        "URL": "buyingcatalogue.digital.nhs.uk/about",
+        "IsFoundation": false
+    },
+    {
+        "ID": 5,
+        "Title": "Care Homes",
+        "Summary": "Enables a record of the Resident’s health and care needs to be maintained and shared with parties who are involved in providing care, to support decision making and the effective planning and delivery of care.",
+        "URL": "buyingcatalogue.digital.nhs.uk/about",
+        "IsFoundation": false
+    },
+    {
+        "ID": 6,
+        "Title": "Caseload Management",
+        "Summary": "Supports the allocation of appropriate Health and Care Professionals to Patients/Service Users in need of support, ensuring balanced workloads and the efficient use of staff and other resources.",
+        "URL": "buyingcatalogue.digital.nhs.uk/about",
+        "IsFoundation": false
+    },
+    {
+        "ID": 7,
+        "Title": "Clinical Decision Support",
+        "Summary": "Supports clinical decision-making to improve Patient safety at the point of care.",
+        "URL": "buyingcatalogue.digital.nhs.uk/about",
+        "IsFoundation": false
+    },
+    {
+        "ID": 8,
+        "Title": "Referral Management",
+        "Summary": "Supports recording, reviewing, sending, and reporting of Patient Referrals. Enables Referral information to be included in the Patient Record.",
+        "URL": "buyingcatalogue.digital.nhs.uk/about",
+        "IsFoundation": true
+    },
+    {
+        "ID": 9,
+        "Title": "Resource Management",
+        "Summary": "Supports the management and reporting of Practice information, resources, Staff Members and related organisations. Also enables management of Staff Member availability and inactivity.",
+        "URL": "buyingcatalogue.digital.nhs.uk/about",
+        "IsFoundation": true
+    },
+    {
+        "ID": 10,
+        "Title": "Communication Management",
+        "Summary": "Supports the delivery and management of communications to Citizens and Practice staff.",
+        "URL": "buyingcatalogue.digital.nhs.uk/about",
+        "IsFoundation": false
+    },
+    {
+        "ID": 11,
+        "Title": "Communicate With Practice - Citizen",
+        "Summary": "Supports the management and reporting of Practice information, resources, Staff Members and related organisations. Also enables management of Staff Member availability and inactivity.",
+        "URL": "buyingcatalogue.digital.nhs.uk/about",
+        "IsFoundation": false
+    }
+    
+]
