@@ -142,15 +142,16 @@ body div.container.main-content {
   padding: 1em;
 }
 
-#capability-selector-page form section.form-controls  button {
+form section.form-controls  button {
   border: none;
   border-bottom: 2px solid #013317;
   background: #007f3b;
   padding: 1em 2em;
+  margin: 1em 0em;
   color: #ffffff;
 }
 
-#capability-selector-page form section.form-controls button:hover {
+form section.form-controls button:hover {
   background: #005f0b;
 }
 
@@ -206,7 +207,7 @@ body div.container.main-content {
   background: #ffffff;
   margin: none;
   padding: none;
-  height: 15em;
+  height: 25em;
   border: 1px solid #005eb8
 }
 ::-webkit-scrollbar {
