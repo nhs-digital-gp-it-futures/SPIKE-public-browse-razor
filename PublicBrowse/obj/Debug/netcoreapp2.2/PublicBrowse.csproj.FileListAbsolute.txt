@@ -60,3 +60,4 @@
 /home/adam/github/nhsd/SPIKE-public-browse-razor/PublicBrowse/obj/Debug/netcoreapp2.2/PublicBrowse.dll
 /home/adam/github/nhsd/SPIKE-public-browse-razor/PublicBrowse/obj/Debug/netcoreapp2.2/PublicBrowse.pdb
 /home/adam/github/nhsd/SPIKE-public-browse-razor/PublicBrowse/obj/Debug/netcoreapp2.2/PublicBrowse.csproj.CopyComplete
+/home/adam/github/nhsd/SPIKE-public-browse-razor/PublicBrowse/obj/Debug/netcoreapp2.2/Razor/Pages/Solution.g.cshtml.cs

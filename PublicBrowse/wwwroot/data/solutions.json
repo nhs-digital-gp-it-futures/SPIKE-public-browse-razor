@@ -3,48 +3,290 @@
         "ID": 0,
         "Name": "Really Kool Document Manager",
         "Description": "This Document Manager is the koolest document manager you've ever seen. You'll be sorry if you didn't spend your monies on this!",
-        "CapabilityIDs": [0, 1, 2, 3, 4, 5, 6, 7]
+        "CapabilityIDs": [0, 1, 2, 3, 4, 5, 6, 7],
+        "Organisation": "Kool Org",
+        "Features": [
+            "View and add Clinical records",
+            "View daily appointments and diary entries",
+            "View map of patient entries",
+            "Update clinical records",
+            "Add user tasks"
+        ],
+        "Framework": "GP IT Futures Framework",
+        "ListPrice": "£50.00 per patient",
+        "AssociatedServices": [
+            {
+                "Name": "Training (On-site)",
+                "Price": "£3,500.00 per day"
+            },
+            {
+                "Name": "Training (Documentation)",
+                "Price": "£10,000.00 per set"
+            },
+            {
+                "Name": "Training (Online)",
+                "Price": "£1,000.00 per session"
+            },
+            {
+                "Name": "Support (Via Telephone)",
+                "Price": "£1.99 per minute"
+            }
+        ],
+        "AdditionalServices": [
+            {
+                "Name": "Data Extraction",
+                "Price": "£10.00 per patient"
+            },
+            {
+                "Name": "Monthly Reporting/Analysis",
+                "Price": "£2,500.00 per month"
+            }
+        ]
     },
     {
         "ID": 1,
         "Name": "Really Kool Appointments Manager",
         "Description": "From the team that made the koolest document manager comes the koolest appoinments manager you've ever seen. Don't be a fool, buy something kool",
-        "CapabilityIDs": [0, 1, 3, 4, 5, 7]
+        "CapabilityIDs": [0, 1, 3, 4, 5, 7],
+        "Organisation": "Kool Org",
+        "Features": [
+            "Book follow-up appointments",
+            "Create and amend appointment schedule",
+            "Add new prescription renewal meetings",
+            "View and enter date online and offline"
+        ],
+        "Framework": "GP IT Futures Framework",
+        "ListPrice": "£100.00 per patient",
+        "AssociatedServices": [
+            {
+                "Name": "Training (On-site)",
+                "Price": "£2,000 per day"
+            },
+            {
+                "Name": "Training (Documentation)",
+                "Price": "£5,000.00 per set"
+            },
+            {
+                "Name": "Training (Online)",
+                "Price": "£500.00 per session"
+            },
+            {
+                "Name": "Support (Via Telephone)",
+                "Price": "Free"
+            }
+        ],
+        "AdditionalServices": [
+            {
+                "Name": "Data Extraction",
+                "Price": "£15.00 per patient"
+            },
+            {
+                "Name": "Monthly Reporting/Analysis",
+                "Price": "£2,000.00 per month"
+            }
+        ]
     },
     {
         "ID": 2,
         "Name": "Really Kool Thing",
         "Description": "You don't even want to know how kool this is. It's so kool we couldn't even give it a propper name. YOU NEED THIS!",
-        "CapabilityIDs": [1, 3, 5, 6]
+        "CapabilityIDs": [1, 3, 5, 6],
+        "Organisation": "Kool Org",
+        "Features": [
+            "Does some kool stuff",
+            "Manage your things",
+            "Does your homework",
+            "Waters your plants",
+            "Walks your ferret"
+        ],
+        "Framework": "GP IT Futures Framework",
+        "ListPrice": "£60.00 per patient",
+        "AssociatedServices": [
+            {
+                "Name": "Training (On-site)",
+                "Price": "£10.00 per person per hour"
+            },
+            {
+                "Name": "Training (Documentation)",
+                "Price": "£100.00 per copy"
+            },
+            {
+                "Name": "Training (Online)",
+                "Price": "£50.00 per account per month"
+            },
+            {
+                "Name": "Support (Via Telephone)",
+                "Price": "£4.99 per minute"
+            }
+        ],
+        "AdditionalServices": [
+            {
+                "Name": "Data Extraction",
+                "Price": "£100.00 per patient"
+            }
+        ]
     },
     {
         "ID": 3,
         "Name": "Nexus Pro",
         "Description": "Nexus Pro is the ELITE appointments managment tool. It will make sure you have all your appointments in order.",
-        "CapabilityIDs": [0]
+        "CapabilityIDs": [0],
+        "Organisation": "NexusCo",
+        "Features": [
+            "Book follow-up appointments",
+            "Create and amend appointment schedule",
+            "Add new prescription renewal meetings",
+            "View and enter date online and offline"
+        ],
+        "Framework": "GP IT Futures Framework",
+        "ListPrice": "£75.00 per patient",
+        "AssociatedServices": [
+            {
+                "Name": "Training (On-site)",
+                "Price": "£1,250.00"
+            }
+        ],
+        "AdditionalServices": [
+            {
+                "Name": "Monthly Reporting/Analysis",
+                "Price": "£3,499.99 per month"
+            }
+        ]
     },
     {
         "ID": 4,
         "Name": "AEIOU",
         "Description": "A no-fuss approach to managing much of what you do on a day to day basis. This tool will remove all consonants from anything you upload. They are a waste of time.",
-        "CapabilityIDs": [4, 5, 6, 7]
+        "CapabilityIDs": [4, 5, 6, 7],
+        "Organisation": "Alphabet",
+        "Features": [
+            "View and add Clinical records",
+            "View daily appointments and diary entries",
+            "View map of patient entries",
+            "Update clinical records",
+            "Add user tasks",
+            "Vowel-centric",
+            "Sanitises all data."
+        ],
+        "Framework": "GP IT Futures Framework",
+        "ListPrice": "£1.00 per patient",
+        "AssociatedServices": [
+            {
+                "Name": "Training (On-site)",
+                "Price": "£1.00 per day"
+            },
+            {
+                "Name": "Training (Documentation)",
+                "Price": "Free"
+            },
+            {
+                "Name": "Support (Via Telephone)",
+                "Price": "Free"
+            }
+        ],
+        "AdditionalServices": [
+            {
+                "Name": "Data Extraction",
+                "Price": "£99.99 per patient"
+            },
+            {
+                "Name": "Monthly Reporting/Analysis",
+                "Price": "£499.99 per month"
+            }
+        ]
     },
     {
         "ID": 5,
         "Name": "Anti CRM Machine",
         "Description": "We hate CRMs.",
-        "CapabilityIDs": [2, 3, 5, 7]
+        "CapabilityIDs": [2, 3, 5, 7],
+        "Organisation": "Not-so-dynamic",
+        "Features": [
+            "Its just a database",
+            "It just works"
+        ],
+        "Framework": "GP IT Futures Framework",
+        "ListPrice": "£12.00 per patient",
+        "AssociatedServices": [
+            {
+                "Name": "Training (On-site)",
+                "Price": "£1,000.00 per day"
+            }
+        ],
+        "AdditionalServices": [
+            {
+                "Name": "Data Extraction",
+                "Price": "£90.00 per patient"
+            },
+            {
+                "Name": "Monthly Reporting/Analysis",
+                "Price": "£1,500.00 per month"
+            }
+        ]
     },
     {
         "ID": 6,
         "Name": "Generic Tool",
         "Description": "Bla-bla-bla, you're not really going to read anything anyway, you just want to see if we're cheaper than the competition (we're not)",
-        "CapabilityIDs": [0, 4, 7]
+        "CapabilityIDs": [0, 4, 7],
+        "Organisation": "GeneriCo",
+        "Features": [
+            "You wouldn't actually know what it does by reading this anyway.",
+            "The best at what it does",
+            "More X than other Tools",
+            "More Y than other Tools",
+            "More Z than otherTools"
+        ],
+        "Framework": "GP IT Futures Framework",
+        "ListPrice": "£999.99 per patient",
+        "AssociatedServices": [
+            {
+                "Name": "Training (On-site)",
+                "Price": "£9,999.99 per day"
+            }
+        ],
+        "AdditionalServices": [
+            {
+                "Name": "Data Extraction",
+                "Price": "£100.00 per patient"
+            },
+            {
+                "Name": "Monthly Reporting/Analysis",
+                "Price": "£3,800.00 per month"
+            }
+        ]
     },
     {
         "ID": 7,
         "Name": "Faceless Organisation's System",
         "Description": "Who are we? Who are you? Who am I? If you have ever asked yourself any of these questions, then maybe this is the GP system for you.",
-        "CapabilityIDs": [0, 1, 2, 3, 4, 5, 6]
-    },
+        "CapabilityIDs": [0, 1, 2, 3, 4, 5, 6],
+        "Organisation": "Dellsoft",
+        "Features": [
+            "We will consume all your personal data",
+            "You will submit",
+            "We will target you with Ads",
+            "You will submit",
+            "We will influence your voting habits",
+            "You will submit"
+        ],
+        "Framework": "GP IT Futures Framework",
+        "ListPrice": "£29.99 per patient",
+        "AssociatedServices": [
+                        {
+                "Name": "Training (e-books)",
+                "Price": "Free"
+            },
+            {
+                "Name": "Support (Via online chat)",
+                "Price": "Free"
+            }
+        ],
+        "AdditionalServices": [
+            {
+                "Name": "Monthly Reporting/Analysis",
+                "Price": "£2,499.99 per month"
+            }
+        ]
+    }
 ]

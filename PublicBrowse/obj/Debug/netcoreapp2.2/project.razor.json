@@ -2958,6 +2958,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "Pages/Solution.cshtml",
+      "TargetPath": "Pages/Solution.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "Pages/Shared/_Layout.cshtml",
       "TargetPath": "Pages/Shared/_Layout.cshtml",
       "FileKind": "mvc"

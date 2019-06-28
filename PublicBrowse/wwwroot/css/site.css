@@ -42,7 +42,6 @@ body div.container.main-content {
 }
 
 #layout-nav ul {
-  list-style-type: none;
   display: flex;
   height: 100%;
 }
@@ -93,7 +92,6 @@ body div.container.main-content {
 }
 
 #capability-selector-page ul.capability-selector {
-  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -165,7 +163,6 @@ form section.form-controls button:hover {
 }
 
 #solution-results-page div.page-description ul.capability-selection-listing {
-  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
 }
@@ -174,19 +171,19 @@ form section.form-controls button:hover {
   padding: 0.25em 0.5em;
 }
 
-#solution-results-page div.panel-container {
+div.panel-container {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   padding: 1em;
 }
 
-#solution-results-page div.panel-container div.search-panel {
+div.panel-container div.left-panel,
+div.panel-container div.search-panel {
   width: 30%;
 }
 
 #solution-results-page div.panel-container div.search-panel div.scrollable-checkboxes ul{
-  list-style-type: none;
   padding: none;
   margin: none;
 }
@@ -234,15 +231,13 @@ form section.form-controls button:hover {
   background: #f0f4f5;
 }
 
+div.panel-container div.right-panel,
 #solution-results-page div.panel-container div.results-panel {
   width: 65%;
   min-width: 40em;
   padding: 0em 1em;
 }
 
-#solution-results-page div.panel-container div.results-panel ul {
-  list-style-type: none;
-}
 
 #solution-results-page div.panel-container div.results-panel ul li.solution-result {
   border-top: 2px solid #d0d4d5;
@@ -263,19 +258,62 @@ form section.form-controls button:hover {
   width: 50%;
 }
 
-#solution-results-page div.return-container {
+div.return-container {
   width: 100%;
   background: #ffffff;
   color: #005eb8;
   padding: 1em;
 }
 
-#solution-results-page div.return-container a:visited,
-#solution-results-page div.return-container a {
+ul.features-listing {
+  list-style-type: disc;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a, a:visited {
   color: #005eb8;
   text-decoration: none;
 }
+a:hover {
+ background: #ffb81c;
+}
 
-#solution-results-page div.return-container a:hover {
- background: #ffb81c
+#marketing-page section {
+  padding: 1em 0em;
+}
+
+#marketing-page section h2 {
+  width: 100%;
+  border-bottom: 2px solid #d0d4d5;
+}
+
+#marketing-page section table tr,
+#marketing-page section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#marketing-page section table tr td{
+  width: 50%;
+  border-bottom: 2px solid #d0d4d5;
+}
+
+#marketing-page div.headings h2 {
+  width: 100%;
+  border-bottom: 2px solid #d0d4d5;
+}
+
+#marketing-page div.headings li {
+  font-size: larger;
+  padding: 0.5em 0em;
+}
+
+#marketing-page div.page-title {
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px solid #005eb8;
+  border-top: 2px solid #005eb8;
 }

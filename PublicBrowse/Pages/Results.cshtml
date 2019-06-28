@@ -51,7 +51,7 @@
                 @foreach (var solution in Model.Solutions) {
                     <li class="solution-result">
                         <h3>
-                            @Html.DisplayFor(modelItem => solution.Name)
+                            <a href="/Solution/@Html.DisplayFor(modelItem => solution.ID)">@Html.DisplayFor(modelItem => solution.Name)</a>
                         </h3>
                         <p class="middle">@Html.DisplayFor(modelItem => solution.Description)</p>
                         <h4>Capabilities</h4>

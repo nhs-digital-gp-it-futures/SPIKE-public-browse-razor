@@ -57,6 +57,7 @@ namespace PublicBrowse.Pages
 
             var selectedSet = capabilitySelections.Where((cap) => cap.IsSelected);
             var AllSolutions = readSolutions();
+
             CapabilitySelectionOptions = Capabilities.Select((cap) => new CapabilitySelection{
                 ID = cap.ID,
                 IsSelected = selectedSet.Any((sel) => sel.ID == cap.ID)
