@@ -26,6 +26,10 @@ namespace PublicBrowse.Pages
         private String CapabilityFileName = "wwwroot/data/capabilites.json";
         private String SolutionFileName = "wwwroot/data/solutions.json";
 
+        [BindProperty]
+        public FoundationFilters SolutionFilters { get; set; } = new FoundationFilters{ ShowFoundation=true, ShowNonFoundation=true };
+
+
         private IList<Capability> readCapabilities() {
             String jsonText = System.IO.File.ReadAllText(CapabilityFileName);
             return JsonConvert.DeserializeObject<IList<Capability>>(jsonText);
@@ -47,37 +51,62 @@ namespace PublicBrowse.Pages
         public void OnGet(IList<CapabilitySelection> capabilitySelections)
         {
 
-            var selectedCapabilityString = this.session.GetString("selectedCapabilities");
 
+            // Deserialse Session Data
+
+            // Capability Selection Data
+            var selectedCapabilityString = this.session.GetString("selectedCapabilities");
             if(selectedCapabilityString != null && selectedCapabilityString != "") {
                 capabilitySelections = JsonConvert.DeserializeObject<IList<CapabilitySelection>>(selectedCapabilityString);
             }
 
+            // Solution Selection Data
+            var solutionFiltersString = this.session.GetString("solutionFilters");
+            if(solutionFiltersString != null && solutionFiltersString != "") {
+                SolutionFilters = JsonConvert.DeserializeObject<FoundationFilters>(solutionFiltersString);
+            }
+
+            // Read All Capability List
             Capabilities = readCapabilities();
 
+            // Filter Only Selected Capabilitys
             var selectedSet = capabilitySelections.Where((cap) => cap.IsSelected);
             var AllSolutions = readSolutions();
 
+            // Build Capability Selection Options
             CapabilitySelectionOptions = Capabilities.Select((cap) => new CapabilitySelection{
                 ID = cap.ID,
                 IsSelected = selectedSet.Any((sel) => sel.ID == cap.ID)
             }).ToList();
 
-            if(capabilitySelections.Count == 0) {
-                SelectedCapabilities = new List<Capability>();
-                Solutions = AllSolutions;
-            } else {
+            // initialise selected capabilities and visible solutions
+            SelectedCapabilities = new List<Capability>();
+            Solutions = AllSolutions;
+
+            // Filter Solutions by selected capabilities.
+            if(capabilitySelections.Count != 0) {
+                // Filter solutions if 
                 SelectedCapabilities = Capabilities.Where(
                     (cap) => selectedSet.Any((sel) => sel.ID == cap.ID)
                 ).ToList();
 
-                Solutions = AllSolutions.Where(
+                Solutions = Solutions.Where(
                     (sol) => SelectedCapabilities.All(
                         (cap) => sol.CapabilityIDs.Any(
                             (id) => cap.ID == id
                         )
                     )
                 ).ToList();
+            }
+
+            // filter-out foundation solutions
+            if(!SolutionFilters.ShowFoundation) {
+                Solutions = Solutions.Where((sol) => !sol.IsFoundation).ToList();
+            }
+
+            // filter-out non-foundation solutions
+            if(!SolutionFilters.ShowNonFoundation) {
+                Solutions = Solutions.Where((sol) => sol.IsFoundation).ToList();
             }
         }
         public IActionResult OnPost()
@@ -89,6 +118,10 @@ namespace PublicBrowse.Pages
             var selectedCapabilities = CapabilitySelectionOptions.Where((cap) => cap.IsSelected).ToList();
             var selectedCapabilitiesString = JsonConvert.SerializeObject(selectedCapabilities);
             this.session.SetString("selectedCapabilities", selectedCapabilitiesString);
+
+            var solutionFiltersString = JsonConvert.SerializeObject(SolutionFilters);
+            this.session.SetString("solutionFilters", solutionFiltersString);
+
             return RedirectToPage("./Results", selectedCapabilitiesString);
         }
     }

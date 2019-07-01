@@ -24,11 +24,12 @@
             <p><b>No Capabilities Selected</b>, showing all solutions.</p>
         }
     </div>
-    
+
     <div class="panel-container">
         <div class="search-panel">
             <form method="post">
-            <h2>Refine your selection</h2>
+                <h2>Refine your selection</h2>
+                <h3>Capabilty Filters</h3>
                 <div class="scrollable-checkboxes"> 
                     <ul>
                         <li class="listing-section-header">A-Z</li>
@@ -40,6 +41,13 @@
                         }
                     </ul>
                 </div>
+                <section >
+                    <h3>Foundation Solution Filters</h3>
+                    <div class="results-filters">
+                        <div class="checkbox-filter"><label>@Html.CheckBoxFor(modelItem => Model.SolutionFilters.ShowFoundation)Show Foundation Solutions</lable></div>
+                        <div class="checkbox-filter"><label>@Html.CheckBoxFor(modelItem => Model.SolutionFilters.ShowNonFoundation)Show Non-Foundation Solutions</lable></div>
+                    </div>
+                </section>
                 <section class="form-controls">
                     <button type="submit">Apply Search</button>
                 </section>

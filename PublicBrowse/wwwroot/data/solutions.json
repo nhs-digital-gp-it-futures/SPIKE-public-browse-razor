@@ -1,6 +1,7 @@
 [
     {
         "ID": 0,
+        "IsFoundation": true,
         "Name": "Really Kool Document Manager",
         "Description": "This Document Manager is the koolest document manager you've ever seen. You'll be sorry if you didn't spend your monies on this!",
         "CapabilityIDs": [0, 1, 2, 3, 4, 5, 6, 7],
@@ -45,6 +46,7 @@
     },
     {
         "ID": 1,
+        "IsFoundation": true,
         "Name": "Really Kool Appointments Manager",
         "Description": "From the team that made the koolest document manager comes the koolest appoinments manager you've ever seen. Don't be a fool, buy something kool",
         "CapabilityIDs": [0, 1, 3, 4, 5, 7],
@@ -88,6 +90,7 @@
     },
     {
         "ID": 2,
+        "IsFoundation": false,
         "Name": "Really Kool Thing",
         "Description": "You don't even want to know how kool this is. It's so kool we couldn't even give it a propper name. YOU NEED THIS!",
         "CapabilityIDs": [1, 3, 5, 6],
@@ -128,6 +131,7 @@
     },
     {
         "ID": 3,
+        "IsFoundation": false,
         "Name": "Nexus Pro",
         "Description": "Nexus Pro is the ELITE appointments managment tool. It will make sure you have all your appointments in order.",
         "CapabilityIDs": [0],
@@ -155,6 +159,7 @@
     },
     {
         "ID": 4,
+        "IsFoundation": false,
         "Name": "AEIOU",
         "Description": "A no-fuss approach to managing much of what you do on a day to day basis. This tool will remove all consonants from anything you upload. They are a waste of time.",
         "CapabilityIDs": [4, 5, 6, 7],
@@ -197,6 +202,7 @@
     },
     {
         "ID": 5,
+        "IsFoundation": false,
         "Name": "Anti CRM Machine",
         "Description": "We hate CRMs.",
         "CapabilityIDs": [2, 3, 5, 7],
@@ -226,6 +232,7 @@
     },
     {
         "ID": 6,
+        "IsFoundation": false,
         "Name": "Generic Tool",
         "Description": "Bla-bla-bla, you're not really going to read anything anyway, you just want to see if we're cheaper than the competition (we're not)",
         "CapabilityIDs": [0, 4, 7],
@@ -258,9 +265,10 @@
     },
     {
         "ID": 7,
+        "IsFoundation": true,
         "Name": "Faceless Organisation's System",
         "Description": "Who are we? Who are you? Who am I? If you have ever asked yourself any of these questions, then maybe this is the GP system for you.",
-        "CapabilityIDs": [0, 1, 2, 3, 4, 5, 6],
+        "CapabilityIDs": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
         "Organisation": "Dellsoft",
         "Features": [
             "We will consume all your personal data",

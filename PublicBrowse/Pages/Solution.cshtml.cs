@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using PublicBrowse.Models;
 using Newtonsoft.Json;
@@ -17,11 +15,11 @@ namespace PublicBrowse.Pages
         private IList<Solution> Solutions;
         public Solution SelectedSolution;
         public int SolutionID;
+
         public SolutionModel(IHttpContextAccessor httpContextAccessor)
         {
             this.session = httpContextAccessor.HttpContext.Session;
         }
-
 
         private IList<Solution> readSolutions() {
             String jsonText = System.IO.File.ReadAllText(SolutionFileName);
