@@ -53,8 +53,13 @@ namespace PublicBrowse.Pages
             IEnumerable<Solution> sortedEnum = solutions.OrderBy(sol=>sol.Name);
             return sortedEnum.ToList();
         }
-        public void OnGet(bool onlyFoundation)
+        public void OnGet(bool onlyFoundation, bool allSolutions)
         {
+            if(allSolutions) {
+                this.session.Remove("selectedCapabilities");
+                this.session.Remove("solutionFilters");
+            }
+
             SolutionFilters.FoundationOnly = onlyFoundation;
 
             IList<CapabilitySelection> capabilitySelections = new List<CapabilitySelection>();
@@ -107,6 +112,7 @@ namespace PublicBrowse.Pages
                         ).ToList()
                     }
                 )
+                .Where((sol) => sol.matchingCapabilities.Count > 0)
                 .OrderByDescending((solRes) => solRes.matchingCapabilities.Count)
                 .ToList();
             } else {
