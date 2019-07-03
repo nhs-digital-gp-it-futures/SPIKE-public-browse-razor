@@ -53,14 +53,13 @@
             </form>
         </div>
         <div class="results-panel">
-            <h2 class="collapsible-label">Solutions</h2>
             <ul class="solution-listing">
                 @foreach (var solutionResult in Model.SolutionResults) {
                     <li class="solution-result">
                         <section class="card-heading">
-                            <h3>
+                            <h2>
                                 <a href="/Solution/@Html.DisplayFor(modelItem => solutionResult.solution.ID)">@Html.DisplayFor(modelItem => solutionResult.solution.Name)</a>
-                            </h3>
+                            </h2>
                             <h3 class="card-price">@Html.DisplayFor(modelItem => solutionResult.solution.ListPrice)</h3>
                         </section>
                         <p class="middle">@Html.DisplayFor(modelItem => solutionResult.solution.Description)</p>

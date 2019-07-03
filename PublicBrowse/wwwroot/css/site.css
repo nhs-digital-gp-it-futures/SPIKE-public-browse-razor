@@ -342,6 +342,11 @@ section.card-heading {
 }
 
 
+#solution-results-page div.panel-container div.results-panel ul li.solution-result {
+  background: #ffffff;
+  padding: 1em;
+}
+
 #solution-results-page div.panel-container div.results-panel ul li section.card-heading h3.card-price {
   width: 10em;
   color: #222222;
