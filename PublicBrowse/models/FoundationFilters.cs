@@ -6,5 +6,7 @@ namespace PublicBrowse.Models
     {
         public bool ShowFoundation { get; set; }
         public bool ShowNonFoundation { get; set; }
+        public bool FoundationOnly { get; set; }
+
     }
 }

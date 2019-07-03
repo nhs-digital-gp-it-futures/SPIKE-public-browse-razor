@@ -27,7 +27,11 @@ namespace PublicBrowse.Pages
         private String SolutionFileName = "wwwroot/data/solutions.json";
 
         [BindProperty]
-        public FoundationFilters SolutionFilters { get; set; } = new FoundationFilters{ ShowFoundation=true, ShowNonFoundation=true };
+        public FoundationFilters SolutionFilters { get; set; } = new FoundationFilters {
+            ShowFoundation = true,
+            ShowNonFoundation = true,
+            FoundationOnly = false
+        };
 
 
         private IList<Capability> readCapabilities() {
@@ -48,11 +52,11 @@ namespace PublicBrowse.Pages
             IEnumerable<Solution> sortedEnum = solutions.OrderBy(sol=>sol.Name);
             return sortedEnum.ToList();
         }
-        public void OnGet(IList<CapabilitySelection> capabilitySelections)
+        public void OnGet(bool onlyFoundation)
         {
+            SolutionFilters.FoundationOnly = onlyFoundation;
 
-
-            // Deserialse Session Data
+            IList<CapabilitySelection> capabilitySelections = new List<CapabilitySelection>();
 
             // Capability Selection Data
             var selectedCapabilityString = this.session.GetString("selectedCapabilities");
@@ -99,13 +103,8 @@ namespace PublicBrowse.Pages
                 ).ToList();
             }
 
-            // filter-out foundation solutions
-            if(!SolutionFilters.ShowFoundation) {
-                Solutions = Solutions.Where((sol) => !sol.IsFoundation).ToList();
-            }
-
             // filter-out non-foundation solutions
-            if(!SolutionFilters.ShowNonFoundation) {
+            if(!SolutionFilters.ShowNonFoundation || SolutionFilters.FoundationOnly) {
                 Solutions = Solutions.Where((sol) => sol.IsFoundation).ToList();
             }
         }
