@@ -335,3 +335,15 @@ div.checkbox-filter label {
 div.checkbox-filter label:hover {
   background: #f0f4f5;
 }
+
+section.card-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#solution-results-page div.panel-container div.results-panel ul li section.card-heading h3.card-price {
+  width: 10em;
+  color: #222222;
+}
+

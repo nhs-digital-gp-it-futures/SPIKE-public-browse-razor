@@ -22,6 +22,7 @@ namespace PublicBrowse.Pages
         [BindProperty]
         public IList<CapabilitySelection> CapabilitySelectionOptions { get; set; }
         public IList<Solution> Solutions { get; set; }
+        public IList<SolutionResult> SolutionResults { get; set; }
         public IList<SolutionCapabilities> SolutionCapabilities { get; set; }
         private String CapabilityFileName = "wwwroot/data/capabilites.json";
         private String SolutionFileName = "wwwroot/data/solutions.json";
@@ -89,23 +90,40 @@ namespace PublicBrowse.Pages
 
             // Filter Solutions by selected capabilities.
             if(capabilitySelections.Count != 0) {
-                // Filter solutions if 
                 SelectedCapabilities = Capabilities.Where(
                     (cap) => selectedSet.Any((sel) => sel.ID == cap.ID)
                 ).ToList();
 
-                Solutions = Solutions.Where(
-                    (sol) => SelectedCapabilities.All(
-                        (cap) => sol.CapabilityIDs.Any(
-                            (id) => cap.ID == id
-                        )
-                    )
+                SolutionResults = AllSolutions.Select(
+                    (sol) => new SolutionResult {
+                        solution = sol,
+                        matchingCapabilities = SelectedCapabilities.Where(
+                            // capabilities that are in the solution, and are selected
+                            (cap) => sol.CapabilityIDs.Any((id) => id == cap.ID)
+                        ).ToList(),
+                        otherCapabilities = Capabilities.Where(
+                            // capabilities where it is in the solution, but not selected
+                            (cap) => sol.CapabilityIDs.Any(id => id == cap.ID) && !SelectedCapabilities.Any(sel => sel.ID == cap.ID)
+                        ).ToList()
+                    }
+                )
+                .OrderByDescending((solRes) => solRes.matchingCapabilities.Count)
+                .ToList();
+            } else {
+                SolutionResults = AllSolutions.Select(
+                    (sol) => new SolutionResult{
+                        solution = sol,
+                        matchingCapabilities = new List<Capability>(),
+                        otherCapabilities = Capabilities.Where(
+                            (cap) => sol.CapabilityIDs.Any(id => id == cap.ID)
+                        ).ToList()
+                    }
                 ).ToList();
             }
 
             // filter-out non-foundation solutions
-            if(!SolutionFilters.ShowNonFoundation || SolutionFilters.FoundationOnly) {
-                Solutions = Solutions.Where((sol) => sol.IsFoundation).ToList();
+            if(SolutionFilters.FoundationOnly) {
+                SolutionResults = SolutionResults.Where((sol) => sol.solution.IsFoundation).ToList();
             }
         }
         public IActionResult OnPost()
@@ -113,6 +131,9 @@ namespace PublicBrowse.Pages
             if(!ModelState.IsValid) {
                 return Page();
             }
+
+            this.session.Remove("selectedCapabilities");
+            this.session.Remove("solutionFilters");
 
             var selectedCapabilities = CapabilitySelectionOptions.Where((cap) => cap.IsSelected).ToList();
             var selectedCapabilitiesString = JsonConvert.SerializeObject(selectedCapabilities);

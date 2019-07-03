@@ -55,17 +55,28 @@
         <div class="results-panel">
             <h2 class="collapsible-label">Solutions</h2>
             <ul class="solution-listing">
-                @foreach (var solution in Model.Solutions) {
+                @foreach (var solutionResult in Model.SolutionResults) {
                     <li class="solution-result">
-                        <h3>
-                            <a href="/Solution/@Html.DisplayFor(modelItem => solution.ID)">@Html.DisplayFor(modelItem => solution.Name)</a>
-                        </h3>
-                        <p class="middle">@Html.DisplayFor(modelItem => solution.Description)</p>
-                        <h4>Capabilities</h4>
+                        <section class="card-heading">
+                            <h3>
+                                <a href="/Solution/@Html.DisplayFor(modelItem => solutionResult.solution.ID)">@Html.DisplayFor(modelItem => solutionResult.solution.Name)</a>
+                            </h3>
+                            <h3 class="card-price">@Html.DisplayFor(modelItem => solutionResult.solution.ListPrice)</h3>
+                        </section>
+                        <p class="middle">@Html.DisplayFor(modelItem => solutionResult.solution.Description)</p>
+                        <h4>Selected Capabilities met by this Solution</h4>
                         <ul class="capabilities-met">
-                            @foreach (var capabilityID in solution.CapabilityIDs) {
+                            @foreach (var capability in solutionResult.matchingCapabilities) {
                                 <li>
-                                    @Html.DisplayFor(modelItem => Model.Capabilities[capabilityID].Title)
+                                    @Html.DisplayFor(modelItem => capability.Title)
+                                </li>
+                            }
+                        </ul>
+                        <h4>Other Capabilities met by this Solution</h4>
+                        <ul class="capabilities-met">
+                            @foreach (var capability in solutionResult.otherCapabilities) {
+                                <li>
+                                    @Html.DisplayFor(modelItem => capability.Title)
                                 </li>
                             }
                         </ul>
