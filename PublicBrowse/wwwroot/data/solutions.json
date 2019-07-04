@@ -2,9 +2,9 @@
     {
         "ID": 0,
         "IsFoundation": true,
-        "Name": "Really Kool Document Manager",
-        "Description": "This Document Manager is the koolest document manager you've ever seen. You'll be sorry if you didn't spend your monies on this!",
-        "CapabilityIDs": [0, 1, 2, 3, 4, 5, 6, 7],
+        "Name": "Really Kool Core",
+        "Description": "A real monolithic core system, does everything you need and all the things you don't need, all included in the price!",
+        "CapabilityIDs": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
         "Organisation": "Kool Org",
         "Features": [
             "asdasdfasdfasdf",
@@ -14,7 +14,7 @@
             "Add user tasks"
         ],
         "Framework": "GP IT Futures Framework",
-        "ListPrice": "£50.00 per patient",
+        "ListPrice": "£500.00 per patient",
         "AssociatedServices": [
             {
                 "Name": "Training (On-site)",
@@ -47,9 +47,9 @@
     {
         "ID": 1,
         "IsFoundation": true,
-        "Name": "Really Kool Appointments Manager",
-        "Description": "From the team that made the koolest document manager comes the koolest appoinments manager you've ever seen. Don't be a fool, buy something kool",
-        "CapabilityIDs": [0, 1, 3, 4, 5, 7],
+        "Name": "Frosty Principle",
+        "Description": "The most widely used GP Clinical System in the NHS.",
+        "CapabilityIDs": [0, 1, 2,  3, 4, 5, 6, 7, 10, 11],
         "Organisation": "Kool Org",
         "Features": [
             "Book follow-up appointments",
@@ -91,9 +91,9 @@
     {
         "ID": 2,
         "IsFoundation": false,
-        "Name": "Really Kool Thing",
-        "Description": "You don't even want to know how kool this is. It's so kool we couldn't even give it a propper name. YOU NEED THIS!",
-        "CapabilityIDs": [1, 3, 5, 6],
+        "Name": "Really Kool Prescribing",
+        "Description": "Quite possibly the coolest prescribing system on the market.!",
+        "CapabilityIDs": [2],
         "Organisation": "Kool Org",
         "Features": [
             "Does some kool stuff",
@@ -161,8 +161,8 @@
         "ID": 4,
         "IsFoundation": false,
         "Name": "AEIOU",
-        "Description": "A no-fuss approach to managing much of what you do on a day to day basis. This tool will remove all consonants from anything you upload. They are a waste of time.",
-        "CapabilityIDs": [4, 5, 6, 7],
+        "Description": "A no-fuss approach to managing much of what you do on a day to day basis. This tool will remove bureaucracy by adding administrative overheads.",
+        "CapabilityIDs": [4, 5, 6, 7, 11],
         "Organisation": "Alphabet",
         "Features": [
             "View and add Clinical records",
@@ -203,9 +203,9 @@
     {
         "ID": 5,
         "IsFoundation": false,
-        "Name": "Anti CRM Machine",
-        "Description": "We hate CRMs.",
-        "CapabilityIDs": [2, 3, 5, 7],
+        "Name": "Ring-a-ding-ding document manager",
+        "Description": "This sleek solution to managing your documents will change the way that things are done, you needed a thing we made Ring-a-ding-ding.",
+        "CapabilityIDs": [11],
         "Organisation": "Not-so-dynamic",
         "Features": [
             "Its just a database",
@@ -233,9 +233,9 @@
     {
         "ID": 6,
         "IsFoundation": false,
-        "Name": "Generic Tool",
-        "Description": "Bla-bla-bla, you're not really going to read anything anyway, you just want to see if we're cheaper than the competition (we're not)",
-        "CapabilityIDs": [0, 4, 7],
+        "Name": "For stuff and things",
+        "Description": "FSAT is a game changer in stuff that makes or uses things",
+        "CapabilityIDs": [0, 4, 7, 11],
         "Organisation": "GeneriCo",
         "Features": [
             "You wouldn't actually know what it does by reading this anyway.",
@@ -245,11 +245,11 @@
             "More Z than otherTools"
         ],
         "Framework": "GP IT Futures Framework",
-        "ListPrice": "£999.99 per patient",
+        "ListPrice": "£9.99 per patient",
         "AssociatedServices": [
             {
                 "Name": "Training (On-site)",
-                "Price": "£9,999.99 per day"
+                "Price": "1 per day"
             }
         ],
         "AdditionalServices": [
@@ -266,9 +266,179 @@
     {
         "ID": 7,
         "IsFoundation": true,
-        "Name": "Faceless Organisation's System",
+        "Name": "The only system you ever need",
+        "Description": "This literally does everything, pricey but if you just want one big solution to all your problems then this is it",
+        "CapabilityIDs": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+        "Organisation": "Dellsoft",
+        "Features": [
+            "We will consume all your personal data",
+            "You will submit",
+            "We will target you with Ads",
+            "You will submit",
+            "We will influence your voting habits",
+            "You will submit"
+        ],
+        "Framework": "GP IT Futures Framework",
+        "ListPrice": "£2,999.99 per patient",
+        "AssociatedServices": [
+                        {
+                "Name": "Training (e-books)",
+                "Price": "Free"
+            },
+            {
+                "Name": "Support (Via online chat)",
+                "Price": "Free"
+            }
+        ],
+        "AdditionalServices": [
+            {
+                "Name": "Monthly Reporting/Analysis",
+                "Price": "£2,499.99 per month"
+            }
+        ]
+    },
+    {
+        "ID": 8,
+        "IsFoundation": false,
+        "Name": "GP Wizbang",
         "Description": "Who are we? Who are you? Who am I? If you have ever asked yourself any of these questions, then maybe this is the GP system for you.",
-        "CapabilityIDs": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+        "CapabilityIDs": [5, 6, 7, 8, 9],
+        "Organisation": "Dellsoft",
+        "Features": [
+            "We will consume all your personal data",
+            "You will submit",
+            "We will target you with Ads",
+            "You will submit",
+            "We will influence your voting habits",
+            "You will submit"
+        ],
+        "Framework": "GP IT Futures Framework",
+        "ListPrice": "£29.99 per patient",
+        "AssociatedServices": [
+                        {
+                "Name": "Training (e-books)",
+                "Price": "Free"
+            },
+            {
+                "Name": "Support (Via online chat)",
+                "Price": "Free"
+            }
+        ],
+        "AdditionalServices": [
+            {
+                "Name": "Monthly Reporting/Analysis",
+                "Price": "£2,499.99 per month"
+            }
+        ]
+    },
+    {
+        "ID": 9,
+        "IsFoundation": false,
+        "Name": "Bright Lights!",
+        "Description": "As the guy who designed bright lights, I can tell you right now this is pretty decent stuff.",
+        "CapabilityIDs": [7, 8, 9, 10, 11],
+        "Organisation": "Dellsoft",
+        "Features": [
+            "We will consume all your personal data",
+            "You will submit",
+            "We will target you with Ads",
+            "You will submit",
+            "We will influence your voting habits",
+            "You will submit"
+        ],
+        "Framework": "GP IT Futures Framework",
+        "ListPrice": "£29.99 per patient",
+        "AssociatedServices": [
+                        {
+                "Name": "Training (e-books)",
+                "Price": "Free"
+            },
+            {
+                "Name": "Support (Via online chat)",
+                "Price": "Free"
+            }
+        ],
+        "AdditionalServices": [
+            {
+                "Name": "Monthly Reporting/Analysis",
+                "Price": "£2,499.99 per month"
+            }
+        ]
+    },
+    {
+        "ID": 10,
+        "IsFoundation": false,
+        "Name": "Adams Slack Stack",
+        "Description": "A testimony within a system, this is a Stack that cuts through Slack.",
+        "CapabilityIDs": [7, 8, 9],
+        "Organisation": "Dellsoft",
+        "Features": [
+            "We will consume all your personal data",
+            "You will submit",
+            "We will target you with Ads",
+            "You will submit",
+            "We will influence your voting habits",
+            "You will submit"
+        ],
+        "Framework": "GP IT Futures Framework",
+        "ListPrice": "£29.99 per patient",
+        "AssociatedServices": [
+                        {
+                "Name": "Training (e-books)",
+                "Price": "Free"
+            },
+            {
+                "Name": "Support (Via online chat)",
+                "Price": "Free"
+            }
+        ],
+        "AdditionalServices": [
+            {
+                "Name": "Monthly Reporting/Analysis",
+                "Price": "£2,499.99 per month"
+            }
+        ]
+    },
+    {
+        "ID": 11,
+        "IsFoundation": false,
+        "Name": "The Mitchell Machine",
+        "Description": "You'll never forget your experience using the Mitchell Machine.",
+        "CapabilityIDs": [8, 9, 10, 11],
+        "Organisation": "Dellsoft",
+        "Features": [
+            "We will consume all your personal data",
+            "You will submit",
+            "We will target you with Ads",
+            "You will submit",
+            "We will influence your voting habits",
+            "You will submit"
+        ],
+        "Framework": "GP IT Futures Framework",
+        "ListPrice": "£29.99 per patient",
+        "AssociatedServices": [
+                        {
+                "Name": "Training (e-books)",
+                "Price": "Free"
+            },
+            {
+                "Name": "Support (Via online chat)",
+                "Price": "Free"
+            }
+        ],
+        "AdditionalServices": [
+            {
+                "Name": "Monthly Reporting/Analysis",
+                "Price": "£2,499.99 per month"
+            }
+        ]
+    },
+    {
+        "ID": 12,
+        "IsFoundation": false,
+        "Name": "Dinokorn",
+        "Description": "A real powerhouse of a solution, magic.",
+        "CapabilityIDs": [8, 9,10,11],
         "Organisation": "Dellsoft",
         "Features": [
             "We will consume all your personal data",

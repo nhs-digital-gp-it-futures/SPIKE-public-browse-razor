@@ -37,7 +37,7 @@
     {
         "ID": 5,
         "Title": "Care Homes",
-        "Summary": "Enables a record of the Resident’s health and care needs to be maintained and shared with parties who are involved in providing care, to support decision making and the effective planning and delivery of care.",
+        "Summary": "Enables a record of the Resident's health and care needs to be maintained and shared with parties who are involved in providing care, to support decision making and the effective planning and delivery of care.",
         "URL": "buyingcatalogue.digital.nhs.uk/about",
         "IsFoundation": false
     },
@@ -78,10 +78,9 @@
     },
     {
         "ID": 11,
-        "Title": "Communicate With Practice - Citizen",
-        "Summary": "Supports the management and reporting of Practice information, resources, Staff Members and related organisations. Also enables management of Staff Member availability and inactivity.",
+        "Title": "Document Management",
+        "Summary": "Supports the secure management and classification of all forms unstructured electronic documents including those created by scanning paper documents. Also enables processing of documents and matching documents with Patients",
         "URL": "buyingcatalogue.digital.nhs.uk/about",
         "IsFoundation": false
     }
-    
 ]
