@@ -12,6 +12,7 @@ html, body, div.container.main-content {
   line-height: 1.33; 
   margin:0;
   padding:0;
+  background: #f0f4f5;
 }
 header {
   margin-bottom: none;
@@ -64,7 +65,6 @@ body div.container.main-content {
 #capability-selector-page div.page-description {
   max-width: 40em;
   padding: 1em;
-  margin-bottom: 5em
 }
 
 #capability-selector-page .collapsible h2.collapsible-label {
@@ -147,6 +147,8 @@ form section.form-controls  button {
   padding: 1em 2em;
   margin: 1em 0em;
   color: #ffffff;
+  font-family: 'Frutiger W01', Arial;
+  font-size:100%;
 }
 
 form section.form-controls button:hover {
@@ -350,5 +352,9 @@ section.card-heading {
 #solution-results-page div.panel-container div.results-panel ul li section.card-heading h3.card-price {
   width: 10em;
   color: #222222;
+}
+
+#marketing-page img{
+  width:80%;
 }
 

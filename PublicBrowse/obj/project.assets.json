@@ -12117,23 +12117,23 @@
     ]
   },
   "packageFolders": {
-    "/home/adam/.nuget/packages/": {},
-    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "/Users/charlotte.wainwright/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/adam/github/nhsd/SPIKE-public-browse-razor/PublicBrowse/PublicBrowse.csproj",
+      "projectUniqueName": "/Users/charlotte.wainwright/Documents/SPIKE-public-browse-razor/PublicBrowse/PublicBrowse.csproj",
       "projectName": "PublicBrowse",
-      "projectPath": "/home/adam/github/nhsd/SPIKE-public-browse-razor/PublicBrowse/PublicBrowse.csproj",
-      "packagesPath": "/home/adam/.nuget/packages/",
-      "outputPath": "/home/adam/github/nhsd/SPIKE-public-browse-razor/PublicBrowse/obj/",
+      "projectPath": "/Users/charlotte.wainwright/Documents/SPIKE-public-browse-razor/PublicBrowse/PublicBrowse.csproj",
+      "packagesPath": "/Users/charlotte.wainwright/.nuget/packages/",
+      "outputPath": "/Users/charlotte.wainwright/Documents/SPIKE-public-browse-razor/PublicBrowse/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/home/adam/.nuget/NuGet/NuGet.Config"
+        "/Users/charlotte.wainwright/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
