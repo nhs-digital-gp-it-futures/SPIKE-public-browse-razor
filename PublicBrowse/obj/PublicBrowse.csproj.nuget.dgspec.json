@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "/Users/charlotte.wainwright/Documents/SPIKE-public-browse-razor/PublicBrowse/PublicBrowse.csproj": {}
+    "C:\\Dev\\SPIKE-public-browse-razor\\PublicBrowse\\PublicBrowse.csproj": {}
   },
   "projects": {
-    "/Users/charlotte.wainwright/Documents/SPIKE-public-browse-razor/PublicBrowse/PublicBrowse.csproj": {
+    "C:\\Dev\\SPIKE-public-browse-razor\\PublicBrowse\\PublicBrowse.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/charlotte.wainwright/Documents/SPIKE-public-browse-razor/PublicBrowse/PublicBrowse.csproj",
+        "projectUniqueName": "C:\\Dev\\SPIKE-public-browse-razor\\PublicBrowse\\PublicBrowse.csproj",
         "projectName": "PublicBrowse",
-        "projectPath": "/Users/charlotte.wainwright/Documents/SPIKE-public-browse-razor/PublicBrowse/PublicBrowse.csproj",
-        "packagesPath": "/Users/charlotte.wainwright/.nuget/packages/",
-        "outputPath": "/Users/charlotte.wainwright/Documents/SPIKE-public-browse-razor/PublicBrowse/obj/",
+        "projectPath": "C:\\Dev\\SPIKE-public-browse-razor\\PublicBrowse\\PublicBrowse.csproj",
+        "packagesPath": "C:\\Users\\fawad.ali\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\SPIKE-public-browse-razor\\PublicBrowse\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/charlotte.wainwright/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\fawad.ali\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"

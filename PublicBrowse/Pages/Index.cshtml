@@ -25,7 +25,7 @@
                     @if (Model.Capabilities[i].IsFoundation) {
                         <li>
                             <div class="upper">
-                                <h3><a href=@Html.DisplayFor(model => Model.Capabilities[i].URL)>@Html.DisplayFor(modelItem => Model.Capabilities[i].Title)</a></h3>
+                                <h3>@Html.DisplayFor(modelItem => Model.Capabilities[i].Title)</h3>
                             </div>
                             <p class="middle">@Html.DisplayFor(model => Model.Capabilities[i].Summary)</p>
                             <div class="lower">
@@ -44,7 +44,7 @@
                     @if (!Model.Capabilities[i].IsFoundation) {
                         <li>
                             <div class="upper">
-                                <h3><a href=@Html.DisplayFor(model => Model.Capabilities[i].URL)>@Html.DisplayFor(modelItem => Model.Capabilities[i].Title)</a></h3>
+                                <h3>@Html.DisplayFor(modelItem => Model.Capabilities[i].Title)</h3>
                             </div>
                             <p class="middle">@Html.DisplayFor(model => Model.Capabilities[i].Summary)</p>
                             <div class="lower">
