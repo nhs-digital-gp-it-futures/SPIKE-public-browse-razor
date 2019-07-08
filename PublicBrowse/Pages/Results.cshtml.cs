@@ -55,7 +55,7 @@ namespace PublicBrowse.Pages
         }
         public void OnGet(bool onlyFoundation, bool allSolutions)
         {
-            if(allSolutions) {
+            if(allSolutions || onlyFoundation) {
                 this.session.Remove("selectedCapabilities");
                 this.session.Remove("solutionFilters");
             }
